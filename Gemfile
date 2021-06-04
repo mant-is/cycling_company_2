@@ -16,6 +16,7 @@ gem 'devise', '~> 4.8'
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'factory_bot_rails', '~> 6.2'
 end
 
 group :development do
@@ -25,3 +26,6 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'database_cleaner', '~> 2.0', '>= 2.0.1'
+end

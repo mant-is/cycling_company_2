@@ -1,4 +1,5 @@
 <h3>Welcome to Cycling Company</h3>
 <% if user_signed_in? %>
   <h4>signed in as <%= current_user.email %></h4>
+  <%= render partial: 'rides_list', collection: @rides, as: :ride %>
 <% end %>
