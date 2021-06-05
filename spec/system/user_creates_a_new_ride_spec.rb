@@ -8,11 +8,13 @@ RSpec.feature 'User creates a new ride' do
   scenario 'it is saved to the database' do
     
     bill = create(:user)
-    ride = create(:ride, user_id: bill.id)
     sign_in bill
-
     visit root_path
-    expect(page).to have_css 'a', text: ride.title
+    click_link 'Add new ride'
+    fill_in 'Title', with: 'Sunset Ride'
+    fill_in 'Date', with: '2021-06-30'
+    click_on 'Submit'
+    expect(page).to have_css 'a', text: 'Sunset Ride'
   end
 end
 

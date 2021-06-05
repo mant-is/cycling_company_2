@@ -1,0 +1,6 @@
+<% if target.errors.any? %>
+  <% target.errors.full_messages.each do |message| %>
+    <%= message %>
+    <br>
+  <% end %>
+<% end %>
