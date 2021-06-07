@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <% flash.each do |type, message| %>
+      <%= message %>
+    <% end %>
     <%= render partial: 'layouts/nav' %>
     <%= yield %>
   </body>

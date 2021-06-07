@@ -21,6 +21,13 @@ class RidesController < ApplicationController
   def show
     @ride = Ride.find(params[:id])
   end
+  
+  def destroy
+    @ride = Ride.find(params[:id])
+    @ride.destroy
+    flash.keep.notice = "#{ @ride.title } deleted successfully"
+    redirect_to root_path
+  end
 
   private
   def ride_params

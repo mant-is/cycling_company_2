@@ -2,3 +2,9 @@
   <h2>Title:&nbsp;<%= @ride.title %></h2>
   <h3>Date:&nbsp;<%= @ride.date %></h3>
 </div>
+
+<% if @ride.user_id == current_user.id %>
+  <div class="delete-ride">
+    <%= link_to 'Delete ride', ride_path, method: :delete %>
+  </div>
+<% end %>
