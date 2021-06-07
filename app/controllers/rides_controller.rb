@@ -18,6 +18,10 @@ class RidesController < ApplicationController
     end
   end
 
+  def show
+    @ride = Ride.find(params[:id])
+  end
+
   private
   def ride_params
     params.require(:ride).permit(:title, :user_id, :date)

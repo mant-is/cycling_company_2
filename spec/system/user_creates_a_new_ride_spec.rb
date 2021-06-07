@@ -1,9 +1,5 @@
 require 'rails_helper'
 
-RSpec.configure do |config|
-  config.include Devise::Test::IntegrationHelpers, type: :feature
-end
-
 RSpec.feature 'User creates a new ride' do 
   scenario 'it is saved to the database' do
     
