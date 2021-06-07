@@ -3,6 +3,20 @@
   <h3>Date:&nbsp;<%= @ride.date %></h3>
 </div>
 
+<div class="add-comment">
+  <%= form_with scope: :comment, url: comments_path do |form| %>
+    <%= form.label :body %>
+    <%= form.text_area :body %>
+    <%= form.submit :'Add comment'%>
+    <%= form.hidden_field :user_id, value: current_user.id %>
+    <%= form.hidden_field :ride_id, value: @ride.id %>
+  <% end %>
+</div>
+<div class="comments">
+  <ul>
+    <%= render partial: 'comments/comment', collection: @ride.comments, as: :comment %>
+  </ul>
+</div>
 <% if @ride.user_id == current_user.id %>
   <div class="delete-ride">
     <%= link_to 'Delete ride', ride_path, method: :delete %>

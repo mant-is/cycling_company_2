@@ -1,0 +1,7 @@
+<%= content_tag :li, comment, id: 'comment' do %>
+  <%= comment.body %>
+  Left by:&nbsp;
+  <%= comment.commenter.email %>
+  <%= comment.created_at.strftime("%m/%d/%Y")%>
+<% end %>
+
