@@ -5,5 +5,5 @@
   <%= form.label :date %>
   <%= form.text_field :date %>
   <%= form.hidden_field :user_id, value: current_user.id %>
-  <%= form.submit 'Submit' %>
+  <%= form.submit 'Submit', class: "bg-gray-50 border-red-500" %>
 <% end %>

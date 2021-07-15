@@ -9,6 +9,5 @@ RSpec.feature 'visit ride page' do
     click_on 'Last ride' 
     expect(page).to have_content 'Last ride'
     expect(page).to have_content '2021-07-21'
-
   end
 end 
