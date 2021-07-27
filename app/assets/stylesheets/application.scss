@@ -17,3 +17,9 @@
 html, body {
   font-family: 'Maven Pro', sans-serif; 
 }
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

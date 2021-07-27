@@ -1,3 +1,39 @@
 .sign-in-form {
   display: flex;
+  flex-direction: column;
+  width: max-content;
+  align-self: center;
+
+  h2 {
+    font-size: 1.666666666rem;
+    padding: 1rem 0;
+  }
+
+  form.new_user {
+    width: 20em;
+  }
+
+  .field {
+    input[type=email], input[type=password] { 
+      border: 1px solid lightgray;
+      border-radius: .25rem;
+      width: 100%;
+      height: 2rem;
+      margin: .666666666rem 0;
+    }
+
+    input[type=checkbox] {
+      width: max-content;
+    }
+  }
+
+  .actions {
+    height: 3rem;
+    input[type=submit] {
+      height: 2.333333333rem;
+      width: 6rem;
+      margin: .666666666rem 0;    
+      border-radius: .25rem;
+    }
+  }
 }
