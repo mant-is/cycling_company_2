@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: darkturquoise;
+
+  .not-signed-in {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    align-self: flex-end;
+    padding-right: 1rem;
+
+    .sign-in, .sign-up {
+      padding: .75rem 1rem;
+      font-family: 'Maven Pro', sans-serif; 
+      font-size: 1.25rem;
+      font-weight: 400;
+      a {
+        color: #E6A266;
+      }
+      a:visited {
+        color: #1F346F;
+      }
+    }
+  }
+}

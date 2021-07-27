@@ -1,0 +1,16 @@
+.welcome-header {
+  
+  display: flex;
+  justify-content: center;
+  //flex-direction: column;
+
+  h3 {
+    font-size: 2.333333333rem;
+    margin: 0;
+  }
+
+  h5 {
+    font-size: .666666666rem;
+    line-height: 1.85rem;
+  }
+}

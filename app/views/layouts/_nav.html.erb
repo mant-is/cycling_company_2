@@ -5,9 +5,9 @@
       <%= link_to 'Sign out', destroy_user_session_path %>
     </div>
   <% else %>
-    <div>
-      <%= link_to 'Sign up', new_user_registration_path %>
-      <%= link_to 'Sign in', new_user_session_path %>
+    <div class='not-signed-in'>
+      <div class='sign-up'><%= link_to 'Sign up', new_user_registration_path %></div>
+      <div class='sign-in'><%= link_to 'Sign in', new_user_session_path %></div>
     </div>
   <% end %>
 </nav>

@@ -3,7 +3,7 @@
   <%= form.label :title %>
   <%= form.text_field :title %>
   <%= form.label :date %>
-  <%= form.text_field :date %>
+  <%= form.date_field :date %>
   <%= form.hidden_field :user_id, value: current_user.id %>
   <%= form.submit 'Submit' %>
 <% end %>
