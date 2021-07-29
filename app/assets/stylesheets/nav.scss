@@ -24,4 +24,26 @@ nav {
       }
     }
   }
-}
+
+  .signed-in {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    align-self: flex-end;
+    padding-right: 1rem;
+    
+    .add-ride, .sign-out {
+      padding: .75rem 1rem;
+      font-family: 'Maven Pro', sans-serif; 
+      font-size: 1.25rem;
+      font-weight: 400;
+      a {
+        color: #E6A266;
+      }
+      a:visited {
+        color: #1F346F;
+      }
+    }
+  }
+ }
+

@@ -1,8 +1,8 @@
 <nav>
   <% if user_signed_in? %>
-    <div>
-      <%= link_to 'Add new ride', new_ride_path %>
-      <%= link_to 'Sign out', destroy_user_session_path %>
+    <div class='signed-in'>
+      <div class='add-ride'><%= link_to 'Add new ride', new_ride_path %></div>
+      <div class='sign-out'><%= link_to 'Sign out', destroy_user_session_path %></div>
     </div>
   <% else %>
     <div class='not-signed-in'>
